@@ -1,0 +1,68 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.navbar {
+    background: white;
+    padding: 0;
+    min-height: 50px;
+    text-align: left;
+}
+
+.brand-log {
+    color: black;
+    position: relative;
+    left: 50%;
+}
+
+.login-main {
+    height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.login-row {
+    margin: 0;
+    height: 100%;
+}
+
+.login-left {
+    background: tomato;
+    padding: 0;
+}
+
+.login-pg-text {
+    width: 50%;
+    color: white;
+    position: relative;
+    top: 30%;
+}
+
+.login-right {
+    padding: 0;
+}
+
+.login-container {
+    width: 50%;
+    position: relative;
+    top: 30%;
+}
+
+.login-form fieldset>input {
+    width: 100%;
+    border: 0;
+    border-bottom: tomato solid 1px;
+}
+
+.sign-in-btn {
+    border: tomato solid 2px;
+    background: white;
+    color: tomato;
+    border-radius: 10px;
+    padding: 5px 13px;
+}
