@@ -1,0 +1,110 @@
+<!DOCTYPE <!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="obola">
+    <link rel="icon" href="../../media/favicon.ico">
+
+    <title>preview | HELLO BOOKS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../style/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../style/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md fixed-top">
+        <a class="navbar-brand brand-main" href="#">hello
+            <b style="color:white;">books</b>
+        </a>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="updateinfo.html" data-toggle="tooltip" title="add or edit book">
+                    <i class="fa fa-plus"></i> update book
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="font-size:12px">
+                    <i class="fa fa-power-off"></i> logout</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <nav class="sidenav">
+            <ul>
+                <li class="nav-item">
+                    <a href="">
+                        <i class="fa fa-book"></i>
+                        <b class="nav-term"> library</b>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="profile.html">
+                        <i class="fa fa-user-circle-o"></i>
+                        <b class="nav-term"> profile</b>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="">
+                        <i class="fa fa-history"></i>
+                        <b class="nav-term"> history</b>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container addbook-sec">
+        <h4>Add New Book</h4>
+        <div class="container addbook-container">
+            <form action="post" class="addbook_form">
+                Upload book cover picture:<br>
+                <input type="file" name="cover_img">
+                <input type="button" value="upload file" class="upload-cover-pic"><br>
+                <input type="text" name="book_title" placeholder="title"><br>
+                <input type="text" name="book_code" placeholder="code"><br>
+                <input type="text" name="book_author" placeholder="author"><br>
+                <textarea name="book_synopsis" placeholder="synopsis" style="width:100%; height:auto;"></textarea><br>
+                genre:
+                <select name="select genre" id="genre" class="genre">
+                    <option value="all">all</option>
+                    <option value="fiction">fiction</option>
+                    <option value="non-fiction">non-fiction</option>
+                </select>
+                sub-genre
+                <select name="select sub-genre" id="sub-genre" class="sub-genre">
+                    <option value="all">all</option>
+                    <option value="sci-fi">sci-fi</option>
+                    <option value="fantasy">fantasy</option>
+                    <option value="biopic">biopic</option>
+                    <option value="romance">romance</option>
+                    <option value="young adult">young adult</option>
+                    <option value="children's">children's</option>
+                    <option value="other">other</option>
+                </select><br>
+                <input type="button" value="save" class="savebook_btn">
+                <input type="button" value="save and add new" onclick="" class="addbook_btn">
+            </form>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="../../script/main.js"></script>
+</body>
+
+</html>

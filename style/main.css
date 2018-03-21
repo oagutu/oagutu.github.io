@@ -2,9 +2,9 @@ html {
     height: 100%;
 }
 
-body {
+/* body {
     height: 100%;
-}
+} */
 
 .navbar {
     background: white;
@@ -115,6 +115,7 @@ body {
 
 .ml-auto .nav-item>a {
     color: white;
+    font-size: 12px;
 }
 
 .navbar-toggler-icon {
@@ -261,6 +262,10 @@ body {
     margin-top: 70px;
 }
 
+.indv-book-deatails{
+    margin-bottom: 10px;
+}
+
 .lib-filter {
     background: #d9d9d9;
     padding: 10px 10px;
@@ -292,6 +297,8 @@ body {
 .book-sub-genre{color: black;}
 .copies-available {color: #47d147;}
 .book-synopsis{font-size:14px;}
+
+.borrow-icon >button >i{color: tomato;}
 /* .copies-tot{color: slategrey;} */
 
 /*end of library*/
@@ -299,7 +306,7 @@ body {
 /*history*/
 .history-sec{
     margin-left: 160px;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .history-table{
@@ -320,13 +327,69 @@ body {
     font-size: 14px;
 }
 
-.history-header >th{border-top: #47d147;}
+.history-header >th{border-top: black solid 1.5px;}
 .history-row >th{
     font-size: 13px;
 }
 
 /*end of history*/
 
+
+/*addbook*/
+
+.addbook-sec,
+.updatebook-sec {
+    margin-left: 160px;
+    margin-top: 60px;
+}
+
+.addbook-container, .updatebook-container{
+    width: 50%;
+    /* margin-top: 35%; */
+}
+
+.addbook_form >input, .addbook_form >textarea{
+    width: 100%;
+    margin: 15px 5px;
+}
+.addbook_form >select{
+    margin: 15px 15px;
+}
+.upload-cover-pic{
+    background: #47d147;
+    color: white;
+    border-radius: 10px;
+    border:none;
+}
+.upload-cover-pic:hover{
+    cursor: pointer;
+    font-size: 15px;
+}
+.savebook_btn,
+.addbook_btn,
+.deletebook_btn {
+    border-radius: 10px;
+    border: none;
+}
+.savebook_btn:hover,
+.addbook_btn:hover,
+.deletebook_btn:hover {
+    cursor: pointer;
+    font-size: 18px;
+}
+.savebook_btn:hover{
+    color:tomato;
+}
+.addbook_btn{
+    background: tomato;
+    color: white;
+}
+.deletebook_btn{
+    background: red;
+    color: white;
+}
+
+/*addbook*/
 
 
 @media (max-width:770px) {
@@ -371,9 +434,7 @@ body {
         margin-left: 40px;
         margin-top: 60px;
     }
-    .borrowed-sec {
-        margin-left: 40px;
-    }
+    
     .borrowed-table {
         margin-top: 30px;
     }
@@ -382,11 +443,23 @@ body {
     }
 
     /*library*/
-    .lib-search, .library-sec {
+    .bk-cover-pic {max-width: 70%;}
+    .book-synopsis {font-size: 10px;max-width: 90%;}
+
+    /*general*/
+    .borrowed-sec,
+    .lib-search,
+    .library-sec,
+    .addbook-sec,
+    .history-sec {
         margin-left: 40px;
     }
-    .bk-cover-pic{max-width: 70%;}
-    .book-synopsis {font-size: 10px; max-width: 90%;}
+
+    /*addbook*/
+
+    .addbook-container{
+        width: 100%;
+    }
 
 }
 
