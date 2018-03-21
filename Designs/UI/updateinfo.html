@@ -66,18 +66,40 @@
         </nav>
     </div>
 
-    <div class="container addbook-sec">
-        <h4>Add New Book</h4>
-        <div class="container addbook-container">
-            <form action="post" class="addbook_form">
-                Upload book cover picture:<br>
+    <div class="container updatebook-sec">
+        <h4>Update Book Info</h4>
+        <div class="container updatebook-container">
+            <h4>add new book</h4>
+            <form action="" method="post" class="add_new">
+                <a href="addbook.html">
+                    <input type="button" value="add new book" class="add-new-link">
+                </a>
+            </form>
+            <h5>OR</h5>
+
+            <h5>Edit Book Details</h5>
+
+            <form action="" class="addbook_form">
+                <fieldset style="text-align:center;">
+                <input type="text" name="searchbox" class="searchbox" placeholder="search code/title/author" style="width:100%;">
+                <button type="button" onclick="" class="search-btn" style="margin:8px auto;">
+                    <i class="fa fa-search"></i>
+                </button>
+                </fieldset>
+                Edit book cover picture:
+                <br>
+                <img src="../../media/book-covers/defaultCover.png" alt="book cover" style="max-width:200px;">
                 <input type="file" name="cover_img">
-                <input type="button" value="upload file" class="upload-cover-pic"><br>
-                <input type="text" name="book_title" placeholder="title"><br>
-                <input type="text" name="book_code" placeholder="code"><br>
-                <input type="text" name="book_author" placeholder="author"><br>
-                <textarea name="book_synopsis" placeholder="synopsis" style="width:100%; height:auto;"></textarea><br>
-                genre:
+                <input type="button" value="upload file" class="upload-cover-pic">
+                <br>
+                <input type="text" name="book_title" placeholder="title">
+                <br>
+                <input type="text" name="book_code" placeholder="code">
+                <br>
+                <input type="text" name="book_author" placeholder="author">
+                <br>
+                <textarea name="book_synopsis" placeholder="synopsis" style="width:100%; height:auto;"></textarea>
+                <br> genre:
                 <select name="select genre" id="genre" class="genre">
                     <option value="all">all</option>
                     <option value="fiction">fiction</option>
@@ -93,16 +115,14 @@
                     <option value="young adult">young adult</option>
                     <option value="children's">children's</option>
                     <option value="other">other</option>
-                </select><br>
-                <input type="button" value="save" class="savebook_btn">
-                <input type="button" value="save and add new" onclick="" class="addbook_btn">
+                </select>
+                <br>
+                <input type="button" value="save changes" class="savebook_btn">
+                <input type="button" value="delete book" onclick="" class="deletebook_btn">
             </form>
         </div>
 
     </div>
-
-
-
 
     <script src="../../script/main.js"></script>
 </body>

@@ -331,12 +331,13 @@ body {
 
 /*addbook*/
 
-.addbook-sec{
+.addbook-sec,
+.updatebook-sec {
     margin-left: 160px;
     margin-top: 60px;
 }
 
-.addbook-container{
+.addbook-container, .updatebook-container{
     width: 50%;
     /* margin-top: 35%; */
 }
@@ -358,11 +359,15 @@ body {
     cursor: pointer;
     font-size: 15px;
 }
-.savebook_btn, .addbook_btn{
+.savebook_btn,
+.addbook_btn,
+.deletebook_btn {
     border-radius: 10px;
     border: none;
 }
-.savebook_btn:hover, .addbook_btn:hover{
+.savebook_btn:hover,
+.addbook_btn:hover,
+.deletebook_btn:hover {
     cursor: pointer;
     font-size: 18px;
 }
@@ -373,7 +378,10 @@ body {
     background: tomato;
     color: white;
 }
-
+.deletebook_btn{
+    background: red;
+    color: white;
+}
 
 /*addbook*/
 
@@ -440,14 +448,12 @@ body {
     .history-sec {
         margin-left: 40px;
     }
-    
 
     /*addbook*/
 
     .addbook-container{
         width: 100%;
     }
-    
 
 }
 
