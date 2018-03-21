@@ -1,0 +1,158 @@
+<!DOCTYPE <!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="obola">
+    <link rel="icon" href="../../media/favicon.ico">
+
+    <title>preview | HELLO BOOKS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../style/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../style/main.css" rel="stylesheet">
+</head>
+
+<body onload="checkDaysLeft()">
+
+    <nav class="navbar navbar-expand-md fixed-top">
+        <a class="navbar-brand brand-main" href="#">hello
+            <b style="color:white;">books</b>
+        </a>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="font-size:12px">
+                    <i class="fa fa-power-off"></i> logout</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <nav class="sidenav">
+            <ul>
+                <li class="nav-item active">
+                    <a href="">
+                        <i class="fa fa-book"></i><b class="nav-term"> library</b>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="profile.html">
+                        <i class="fa fa-user-circle-o"></i><b class="nav-term"> profile</b>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="">
+                        <i class="fa fa-history"></i><b class="nav-term"> history</b>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container lib-search">
+        <form action="post" class="lib-filter">
+            <label>genre: </label>
+            <select name="select genre" id="genre-filter" class="genre-filter">
+                <option value="all">all</option>
+                <option value="fiction">fiction</option>
+                <option value="non-fiction">non-fiction</option>
+            </select>
+            <label>subgenre: </label>
+            <select name="select sub-genre" id="sub-genre-filter" class="sub-genre-filter">
+                <option value="all">all</option>
+                <option value="sci-fi">sci-fi</option>
+                <option value="fantasy">fantasy</option>
+                <option value="biopic">biopic</option>
+                <option value="romance">romance</option>
+                <option value="young adult">young adult</option>
+                <option value="children's">children's</option>
+            </select>
+            <input type="text" name="searchbox" class="searchbox" placeholder="search title/author">
+            <button type="button" onclick="" class="search-btn"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+
+    <div class="container library-sec">
+        <div class="row library-info">
+            <div class="col-md-3 book-details">
+                <div class="indv-book-deatails">
+                    <img src="../../media/book-covers/anthonyBurgess-AClockworkOrange.jpg" alt="book cover" class="bk-cover-pic">
+                    <h4 class="book-title">A Clockwork Orange,</h4>
+                    <p class="book-author">Anthony Burgess</p>
+                    <p class="book-genre"><b class="book-sub-genre">Fiction - </b></p>
+                    <p class="available-copies">copies: <i class="copies-available"></i>/<i class="copiestot"></i></p>
+                    <p class="book-synopsis">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, obcaecati.
+                    </p>
+                </div>
+                <div class="indv-book-deatails">
+                    <img src="../../media/book-covers/josephHeller-Catch22.jpg" alt="book cover" class="bk-cover-pic">
+                    <h4 class="book-title">Catch-22,</h4>
+                    <p class="book-author">Joseph Heller</p>
+                    <p class="book-genre"><b class="book-sub-genre">Fiction - </b></p>
+                    <p class="available-copies">copies: <i class="copies-available">1</i>/<i class="copiestot">8</i></p>
+                    <p class="book-synopsis">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sed vitae, fuga, 
+                        id ut magnam sapiente qui sunt, temporibus nemo eos pariatur blanditiis.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-3 book-details">
+                <div class="indv-book-deatails">
+                    <img src="../../media/book-covers/bretEastonEllis-AmericanPsycho.jpg" alt="book cover" class="bk-cover-pic">
+                    <h4 class="book-title">American Psycho,</h4>
+                    <p class="book-author">Bret Easton Ellis</p>
+                    <p class="book-genre"><b class="book-sub-genre">Fiction - </b>thriller</p>
+                    <p class="available-copies">copies: <i class="copies-available"></i>/<i class="copiestot"></i></p>
+                    <p class="book-synopsis">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Tempora quisquam inventore magni dolorum consequatur voluptates repudiandae a sunt ducimus qui?
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-3 book-details">
+                <div class="indv-book-deatails">
+                    <img src="../../media/book-covers/georgeOrwell-AnimalFarm.jpg" alt="book cover" class="bk-cover-pic">
+                    <h4 class="book-title">Animal Farm,</h4>
+                    <p class="book-author">George Orwell</p>
+                    <p class="book-genre"><b class="book-sub-genre">Fiction - </b></p>
+                    <p class="available-copies">copies: <i class="copies-available"></i>/<i class="copies-tot"></i></p>
+                    <p class="book-synopsis">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum sit nulla quibusdam adipisci iusto ex ad dol.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-3 book-details">
+                <div class="indv-book-deatails">
+                    <img src="../../media/book-covers/georgeRRMartin-AGameOfThrones.jpg" alt="book cover" class="bk-cover-pic">
+                    <h4 class="book-title">A Game of Thrones,</h4>
+                    <p class="book-author">George R.R. Martin</p>
+                    <p class="book-genre"><b class="book-sub-genre">Fiction - </b>epic/fantasy</p>
+                    <p class="available-copies">copies: <i class="copies-available">4</i>/<i class="copies=tot">7</i></p>
+                    <p class="book-synopsis">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+    <script src="../../script/main.js"></script>
+</body>
+
+</html>
