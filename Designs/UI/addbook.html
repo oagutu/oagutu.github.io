@@ -34,9 +34,8 @@
                     <i class="fa fa-plus"></i> add new
                 </a>
             </li>
-            <!--will be hidden for all except admin-->
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="#" style="font-size:12px">
                     <i class="fa fa-power-off"></i> logout</a>
             </li>
         </ul>
@@ -57,7 +56,7 @@
                         <b class="nav-term"> profile</b>
                     </a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a href="">
                         <i class="fa fa-history"></i>
                         <b class="nav-term"> history</b>
@@ -67,56 +66,41 @@
         </nav>
     </div>
 
-    <div class="container history-sec">
-        <h4>Your History:</h4>
-        <table class="history-table">
-            <tr class="history-header">
-                <th>code</th>
-                <th>title</th>
-                <th>author</th>
-                <th>date borrowed</th>
-                <th>return deadline</th>
-                <th>return date</th>
-                <th>days left</th>
-                <th>status</th>
-                <th>fee(Ksh)</th>
-            </tr>
-            <tr class="history-row" id="history-row-1">
-                <th class="bk-code">86981293</th>
-                <th class="bk-title">How DO They Do It</th>
-                <th class="bk-author">Guy, Some F.</th>
-                <th class="borrow-date">03/17/2018</th>
-                <th class="deadline">03/24/2018</th>
-                <th class="return-date">NA</th>
-                <th class="days-left" id="days-left-1">3</th>
-                <th class="status" id="status">borrowed</th>
-                <th class="unreturned-fee">NA</th>
-            </tr>
-            <tr class="history-row" id="history-row-2">
-                <th class="bk-code">86981333</th>
-                <th class="bk-title">Like This</th>
-                <th class="bk-author">Lady St. Frau</th>
-                <th class="borrow-date">03/17/2018</th>
-                <th class="deadline">03/21/2018</th>
-                <th class="return-date">NA</th>
-                <th class="days-left" id="days-left-2">-1</th>
-                <th class="status">unreturned</th>
-                <th class="unreturned-fee">30</th>
-            </tr>
-            <tr class="history-row" id="history-row-3">
-                <th class="bk-code">86398333</th>
-                <th class="bk-title">A book on books</th>
-                <th class="bk-author">Author Mcauthorface</th>
-                <th class="borrow-date">03/07/2018</th>
-                <th class="deadline">03/21/2018</th>
-                <th class="return-date">03/17/2018</th>
-                <th class="days-left" id="days-left-2">-</th>
-                <th class="status">returned</th>
-                <th class="unreturned-fee">-</th>
-            </tr>
-        </table>
+    <div class="container addbook-sec">
+        <h4>Add New Book</h4>
+        <div class="container addbook-container">
+            <form action="post" class="addbook_form">
+                Upload book cover picture:<br>
+                <input type="file" name="cover_img">
+                <input type="button" value="upload file" class="upload-cover-pic"><br>
+                <input type="text" name="book_title" placeholder="title"><br>
+                <input type="text" name="book_code" placeholder="code"><br>
+                <input type="text" name="book_author" placeholder="author"><br>
+                <textarea name="book_synopsis" placeholder="synopsis" style="width:100%; height:auto;"></textarea><br>
+                genre:
+                <select name="select genre" id="genre" class="genre">
+                    <option value="all">all</option>
+                    <option value="fiction">fiction</option>
+                    <option value="non-fiction">non-fiction</option>
+                </select>
+                sub-genre
+                <select name="select sub-genre" id="sub-genre" class="sub-genre">
+                    <option value="all">all</option>
+                    <option value="sci-fi">sci-fi</option>
+                    <option value="fantasy">fantasy</option>
+                    <option value="biopic">biopic</option>
+                    <option value="romance">romance</option>
+                    <option value="young adult">young adult</option>
+                    <option value="children's">children's</option>
+                    <option value="other">other</option>
+                </select><br>
+                <input type="button" value="save" class="savebook_btn">
+                <input type="button" value="save and add new" onclick="" class="addbook_btn">
+            </form>
+        </div>
 
     </div>
+
 
 
 
