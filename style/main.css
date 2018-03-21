@@ -296,6 +296,37 @@ body {
 
 /*end of library*/
 
+/*history*/
+.history-sec{
+    margin-left: 160px;
+    margin-top: 80px;
+}
+
+.history-table{
+    width: 100%;
+}
+.history-header >th{
+    border-top: #d9d9d9;
+}
+
+.history-row, .history-header{
+    padding: 15px 5px;
+    text-align: center;
+}
+
+.history-table tr:nth-child(even){
+    background: tomato;
+    color:white;
+    font-size: 14px;
+}
+
+.history-header >th{border-top: #47d147;}
+.history-row >th{
+    font-size: 13px;
+}
+
+/*end of history*/
+
 
 
 @media (max-width:770px) {
