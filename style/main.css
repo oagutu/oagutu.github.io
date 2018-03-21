@@ -194,6 +194,7 @@ body {
     /* background: #d9d9d9; */
     font-family: 'Noto Sans',sans-serif;
     border: tomato solid 1px;
+    padding-top: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -236,8 +237,60 @@ body {
     text-align: center;
     border-top: tomato solid 0.5px;
 }
+.status{
+    font-style: italic;
+}
+.return-btn >a{
+    color: white;
+}
+.return-btn>a:hover{
+    color: black;
+    font-size: 25px;
+}
 
 /*end of profile*/
+
+/*library*/
+
+.lib-search{
+    margin-left: 160px;
+    margin-top: 70px;
+}
+
+.lib-filter {
+    background: #d9d9d9;
+    padding: 10px 10px;
+    border-radius: 10px;
+    /* position: -webkit-sticky;
+    position: sticky;
+    top: 50px; */
+}
+
+.lib-filter >label{font-size: 12px;}
+.lib-filter >select >option{font-size: 13px;}
+.lib-filter>select>option:hover {
+    color:white;
+    background: tomato;
+}
+.searchbox{font-style: italic;font-size: 12px;}
+
+.library-sec{
+    margin-left: 160px;
+    margin-top: 60px;
+}
+
+.bk-cover-pic{
+    width:100%;
+    height: auto;
+    border-radius: 10px;
+}
+.book-genre{color: tomato;}
+.book-sub-genre{color: black;}
+.copies-available {color: #47d147;}
+.book-synopsis{font-size:14px;}
+/* .copies-tot{color: slategrey;} */
+
+/*end of library*/
 
 
 
@@ -292,6 +345,13 @@ body {
     .borrowed-row>th, .borrowed-header>th {
         padding: 5px 2px;
     }
+
+    /*library*/
+    .lib-search, .library-sec {
+        margin-left: 40px;
+    }
+    .bk-cover-pic{max-width: 70%;}
+    .book-synopsis {font-size: 10px; max-width: 90%;}
 
 }
 

@@ -6,10 +6,10 @@ function checkDaysLeft(){
         let days = document.getElementById("days-left-" + String(r)).innerHTML
         let row = "borrowed-row-" + String(r);
         if (days <=3 && days > 0){
-            document.getElementById(row).style.background = "grey";
+            document.getElementById(row).style.background = "#cccccc";
         }
         else if (days <= 0) {
-            document.getElementById(row).style.background = "red";
+            document.getElementById(row).style.background = "#ff6666";
         }
         else
         document.getElementById(row).style.background = "white";
