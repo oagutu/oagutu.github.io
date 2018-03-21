@@ -21,9 +21,9 @@ function checkDaysLeft(){
 
 function returnBook(){
     //handles book return process
-    let stat = document.getElementById("status")
-    console.log(stat)
-    stat.innerHTML = "unverified return"
+    let stat = document.getElementById("status");
+    console.log(stat);
+    stat.innerHTML = "unverified return";
     
 }
 
@@ -44,5 +44,27 @@ function getDate() {
     today = month + '/' + day + '/' + year;
     console.log(today);
     document.getElementById("date-returned").innerHTML = "date returned: " + today;
+
+}
+
+function borrowBook(){
+    //invokes book borrowing from library
+    let title = document.getElementById("book-title-1").innerHTML
+    console.log(title);
+    let author = document.getElementById("book-author-1").innerHTML;
+    let reply = confirm("Borrow " + title +" by " + author);
+    if (reply == true){
+        date = prompt("enter date to be returned(mm/dd/yyyy):");
+        console.log(date)
+        if(date == null || date == ""){
+            alert("Date not specified. " + title + " NOT added to your checkout")
+        }
+        else{
+        alert(title + " added to your checkout, to be returned by " + date);
+    }
+    }
+    else{
+        alert(title + "NOT added to your checkout");
+    }
 
 }
