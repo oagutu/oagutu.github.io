@@ -320,7 +320,7 @@ body {
     font-size: 14px;
 }
 
-.history-header >th{border-top: #47d147;}
+.history-header >th{border-top: black solid 1.5px;}
 .history-row >th{
     font-size: 13px;
 }
