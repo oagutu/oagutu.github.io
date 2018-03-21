@@ -15,3 +15,34 @@ function checkDaysLeft(){
         document.getElementById(row).style.background = "white";
     }
 }
+
+
+//library
+
+function returnBook(){
+    //handles book return process
+    let stat = document.getElementById("status")
+    console.log(stat)
+    stat.innerHTML = "unverified return"
+    
+}
+
+function getDate() {
+    var today = new Date();
+    var day = today.getDate();
+    var month = today.getMonth() + 1;
+    var year = today.getFullYear();
+
+    if (day < 10) {
+        day = '0' + day;
+    }
+
+    if (month < 10) {
+        month = '0' + month;
+    }
+
+    today = month + '/' + day + '/' + year;
+    console.log(today);
+    document.getElementById("date-returned").innerHTML = "date returned: " + today;
+
+}
