@@ -2,9 +2,9 @@ html {
     height: 100%;
 }
 
-/* body {
+body {
     height: 100%;
-} */
+}
 
 .navbar {
     background: white;
@@ -118,6 +118,11 @@ html {
     font-size: 12px;
 }
 
+.ml-auto .active >a{
+    color: black;
+    font-size: 13px;
+}
+
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(77, 148, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
@@ -139,7 +144,10 @@ html {
     z-index: 500;
     top: 0;
     left: 0;
-    background-color: tomato;
+    background-color: #d9d9d9;
+    /* border-right: tomato solid 1px; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
     overflow-x: hidden;
     padding-top: 100px;
 }
@@ -155,7 +163,7 @@ html {
 }
 
 .sidenav>ul>li>a {
-    color: white;
+    color: tomato;
     margin: auto;
 }
 
@@ -215,7 +223,7 @@ html {
 }
 
 .profile-tags{
-    background: pink;
+    background: #d9d9d9;
 }
 .borrowed-sec{
     margin-left: 160px;
@@ -403,6 +411,13 @@ updatebook-sec {
     .login-container {
         position: relative;
         top: 10px;
+    }
+    .signup-pg-text{
+        width:100%;
+        text-align: center;
+    }
+    .signup-left{
+        padding-bottom: 110px;
     }
 
 }
